@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:navigation_app/screens/categories_meals_screen.dart';
 import 'package:navigation_app/screens/categories_screen.dart';
+import 'package:navigation_app/screens/meal_detail_screen.dart';
 import 'package:navigation_app/utils/app-routes.dart';
  
 void main() => runApp(MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
           secondary: Colors.amber,
         )  ,
         fontFamily: 'Raleway',
-        canvasColor: Color.fromRGBO(255,254,229, 1),
+        canvasColor: Color.fromARGB(255, 254, 233, 254),
         textTheme: ThemeData.light().textTheme.copyWith(
           headline6: TextStyle(fontSize: 20, fontFamily: 'RobotoCondensed')
         )
@@ -26,7 +27,11 @@ class MyApp extends StatelessWidget {
       routes: {
         AppRoutes.HOME: (ctx) => CategoriesScreen(),
         AppRoutes.CATEGORIES_MEALS: (ctx) => CategoriesMealsScreen(),
-      }
+        AppRoutes.MEAL_DETAIL: (ctx) => MealDetailScreen()
+      },
+      onUnknownRoute: (settings) {
+        return MaterialPageRoute(builder: (_) => CategoriesScreen());
+      },
     );
   }
 }
