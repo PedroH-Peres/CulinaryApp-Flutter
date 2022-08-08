@@ -70,9 +70,9 @@ class MealDetailScreen extends StatelessWidget {
                         leading: CircleAvatar(
                           child: Text('${index+1}'),
                         ),
-                        title: Text(meal.steps![index] as String),
+                        title: Text(meal.steps[index] as String),
                         ),
-                        Divider(color: Colors.black,)
+                        Divider(color: Colors.grey,)
                     ],
                   );
                   }
