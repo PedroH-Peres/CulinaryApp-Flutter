@@ -1,4 +1,4 @@
-# Aplicativo de navegação [Culinára]
+# Aplicativo de navegação [Culinária]
 
 Projeto para aprender navigation no Flutter
 
@@ -9,4 +9,5 @@ Por meio deste projeto busco praticar, estudar e aprimorar meus conhecimentos em
 Aceito sugestões e dicas e ficaria muito feliz de as receber, afinal, conhecimento nunca é demais!
 
 Discord: Playyy#1169
+
 Twitter: @Playyy7
